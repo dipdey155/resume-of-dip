@@ -1,0 +1,364 @@
+/* ***********************
+
+author: Dip Chandra Dey,
+date:10/6/2021,
+description: ,
+version:1.1.0,
+
+************************* */
+/*************** Import Files *******************/
+@import url("./fonts.css");
+/***************Primary css*******************/
+*{
+    margin: 0;
+    padding: 0;
+}
+html{font-family: sans-serif,Arial, Helvetica; scroll-behavior: smooth;}
+ul li{ list-style-type: none;}
+a{text-decoration: none;}
+a:hover{text-decoration: none;}
+.pd{ padding: 80px 0px;}
+h1,h2,h3,h4,h5,h6{ font-family: sans-serif;}
+
+/* ************header start************** */
+
+#headerSection{
+    background: #151515 url(../../images/intro-bg.jpg) no-repeat center bottom;
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 100vh;
+	min-height: 720px;
+	display: table;
+	position: relative;
+}
+.headerOverlay{
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #111111;
+	opacity: .85;
+}
+#headerSection nav a.navbar-brand img{ width: 120px; }
+#headerSection nav { line-height: 60px;}  
+
+#headerSection nav ul li a{
+    padding-left: 25px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: sans-serif;
+    transition: 0.5s;
+}
+#headerSection nav ul li a.active{ color: #FF0077; }
+#headerSection nav ul li a:active{ color: #FF0077; }
+#headerSection nav ul li a:hover{ color: #FF0077; }
+/* intro start */
+#headerSection .intro{ text-align: center; margin-top: 120px;}
+#headerSection .intro h1{
+    font-size: 85px;
+    font-weight: bolder;
+    color: #fff;
+}
+#headerSection .intro h5{color:#CC005F; font-size: 22px; font-weight: bold; letter-spacing: 4px;}
+#headerSection .intro p.introTitle{ 
+    color: #fff;
+    letter-spacing: 3px;
+    font-size: 18px;
+    font-family: serif;
+    margin-bottom: 50px;
+}
+#headerSection .intro p.introTitle::after{
+    content: "|";
+    text-align: center;
+    display: inline-block;
+    padding: 0 14px 0 8px;
+    color: rgba(255, 255, 255, 0.3);
+}
+#headerSection .intro p.introTitle::before{
+    content: "|";
+    text-align: center;
+    display: inline-block;
+    padding: 0 14px 0 8px;
+    color: rgba(255, 255, 255, 0.3);
+}
+#headerSection .intro a.introBtn{ 
+    font-size: 12px;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: #fff;
+    padding: 22px 38px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: ease-in-out 0.4s;
+}
+#headerSection .intro a.introBtn:hover, #headerSection .intro a.introBtn:focus{
+    border: 3px solid #cc005f;
+}
+#headerSection .introSocial{ text-align: center; margin-top: 150px;}
+#headerSection .introSocial ul li a i.fa{
+    color: #fff;
+    font-size: 35px;
+    margin: 0px 20px;
+    transition: all 0.5s;
+}
+#headerSection .introSocial ul li a i.fa:visited{ color: #fff;}
+#headerSection .introSocial ul li a i.fa:hover, #headerSection .introSocial ul li a i.fa:focus{ color: #cc005f;}
+/* header section finish */
+
+#about .aboutTitle{
+    color: #FF0077;
+    font-size: 15px;
+    font-family: "poppins-bold", sans-serif;
+    letter-spacing: 5px;
+}
+#about .subTitle{
+    color: #313131;
+    font-size: 35px;
+    font-family: "poppins-semibold", serif, sans-serif;
+    margin-bottom: 40px;
+}
+#about .authorProfile img{
+    margin-top: 10px;
+    width: 90px;
+    border-radius: 70px;
+}
+#about .authorDes{
+    color: #888888;
+    font-family: "lora-regular", serif, sans-serif;
+    font-size: 19px;
+    text-align: left;
+}
+#about h4{
+    color: #313131;
+    font-family: "poppins-bold", sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+#about .authorProfiledes, .mainSkilldes{
+    color: #6E6E6E;
+    font-family: "lora-regular", serif, sans-serif;
+    font-size: 15px;
+}
+#about .personalDes ul li{
+    margin-bottom: 22px;
+}
+#about .personalDes p.subDetail{
+    margin: 0;
+    padding: 0;
+    color: #313131;
+    font-size: 14px;
+    font-family: "poppins-bold", sans-serif;
+    letter-spacing: 3px;
+}
+#about .personalDes p.info{
+    margin-top: 4px;
+    color: #888888;
+    font-family: "poppins-regular", sans-serif;
+    font-size: 12px;
+}
+
+#about .skillHead{
+    margin-bottom: 4px;
+    padding: 0;
+    color: #313131;
+    font-size: 14px;
+    font-family: "poppins-bold", sans-serif;
+    letter-spacing: 3px;
+}
+#about .skills ul li {
+    margin-bottom: 20px;
+}
+#about .skills .progress{
+    height: 12px;
+    background: #a1a1a1;
+    font-size: 9px;
+}
+#about .skills .progress-bar{
+    color: #fff;
+    background: #313131;
+}
+#about .btn{
+    padding: 13px 46px;
+    border: 2px solid #313131;
+    font-family: "poppins-bold", sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#about .btn:hover{
+    background: #313131;
+    color: #fff;
+}
+
+/* portfolio section start */
+#portfolio .portfolioHead h5{
+    color: #FF0077;
+    font-size: 15px;
+    font-family: "poppins-bold", sans-serif;
+    letter-spacing: 5px;
+}
+#portfolio .portfolioHead h2{
+    color: #313131;
+    font-size: 35px;
+    font-family: "poppins-semibold", serif, sans-serif;
+    margin-bottom: 40px;
+}
+
+#portfolio .card-body .card-text{
+    font-size: 13px;
+    font-family: sans-serif;
+}
+#portfolio .card-body a.btn{font-size: 13px;}
+
+/* portfolio finish *
+
+/* service start */
+#service{
+    background: #313131 url(../../images/bg.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	color: white;
+	position: relative;
+}
+
+#service .overlay{
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #151515;
+	opacity: .9;
+}
+#service .serviceHead h5{
+    color: #FF0077;
+    font-size: 15px;
+    font-family: "poppins-bold", sans-serif;
+    letter-spacing: 5px;
+}
+#service .serviceHead h2{
+    color: #fff;
+    font-size: 35px;
+    font-family: "poppins-semibold", sans-serif, serif;
+    margin-bottom: 40px;
+}
+#service .allServices i.fa{
+    font-size: 54px;
+    color: #FF0077;
+}
+#service .allServices .serviceBody h3{
+    font-size: 20px;
+    font-family: "poppins-semibold", serif, sans-serif;
+    color: #ffffff;
+}
+#service .allServices .serviceBody p{
+    font-size: 16px;
+    font-family:"lora-regular", sans-serif;
+    color: rgba(255, 255, 255, 0.6);
+}
+/* service finish */
+
+/* contact start here */
+#contact form .form-group label{
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.8);
+} 
+#contact .contactHead p{
+    font-size: 15px;
+    font-family:"lora-regular", serif;
+    color: #888888;
+}
+#contact .contactHead h5{
+    color: #FF0077;
+    font-size: 15px;
+    font-family: "poppins-bold", sans-serif;
+    letter-spacing: 5px;
+}
+#contact .contactHead h2{
+    color: #313131;
+    font-size: 35px;
+    font-family: "poppins-semibold", sans-serif, serif;
+}
+#footer{
+    background: #151515;
+}
+#footer .footerTop .footerBox i{
+    font-size: 44px;
+    color: #fff;
+}
+#footer .footerTop .footerBox .boxBody{
+    color: #6E6E6E;
+}
+#footer .footerTop .footerBox .boxBody h5.boxHead{
+    font-size: 14px;
+    font-family: "poppins-bold", sans-serif;
+    color: #FF0077;
+}
+#footer .footerBottom .social ul li a i.fa{
+    color: #fff;
+    padding: 8px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.5s;
+}
+#footer .footerBottom .social ul li a i.fa:hover{color: #FF0077; background: #fff;}
+#footer .footerBottom span{color:#6E6E6E; font-size: 14px; font-family: "poppins-regular", sans-serif;}
+
+
+
+
+
+
+
+/* Media Query for site */
+
+@media (max-width: 575.98px) {
+    #headerSection nav { line-height: 40px;} 
+    #headerSection nav ul li a:hover{padding-left: 32px;}
+    #headerSection .intro{position: relative; top: 12%;}
+    #headerSection .intro h5{font-size: 18px;}
+    #headerSection .intro h1{font-size: 48px;}
+    #headerSection .intro p.introTitle{font-size: 13px;}
+    #headerSection .introSocial{margin-top: 175px;}
+    #headerSection .introSocial ul li a i.fa{font-size: 25px; margin: 0px 8px;}
+    #about .subTitle{font-size: 23px; margin-bottom: 15px;}
+    #about .authorDes p{font-size: 14px;}
+    #about .authorProfiledes, .mainSkilldes{font-size: 14px;}
+    #portfolio .portfolioHead h2{font-size: 23px; margin-bottom: 15px;}
+    #service .serviceHead h2{font-size: 23px;}
+    #service .allServices i.fa{font-size: 45px;}
+    #service .allServices .serviceBody p{font-size: 13px;}
+    #service .allServices .serviceBody h3{font-size: 17px;}
+    #contact .contactHead h2{font-size: 23px;}
+    #contact .contactHead p{font-size: 13px;}
+    #contact form .form-group input{font-size: 14px;}
+    #contact form .form-group textarea{font-size: 14px;}
+    #footer .footerTop .footerBox .boxBody h5.boxHead{font-size: 13px; letter-spacing: 1px;}
+}
+
+@media (max-width: 767.98px) {
+    #headerSection .intro h1{font-size: 35px;}
+    #about .authorDes{
+    font-size: 15px;
+    text-align: center;
+    margin-top:  16px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    #headerSection .intro h1{font-size: 42px;}
+    #headerSection .intro{position: relative; top: 15%;}
+}
+
+@media (max-width: 1199.98px) {
+}
